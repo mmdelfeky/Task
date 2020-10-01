@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {AppIcon, AppText, AppView} from '../../../common';
 import {boldStyle} from '../../../utils/styles';
+import Help from '../../Help';
 
 const Welcome = () => {
   return (
@@ -14,16 +15,7 @@ const Welcome = () => {
           how are you doing today ?
         </AppText>
       </AppView>
-      <AppView row>
-        <AppIcon
-          marginHorizontal={2}
-          color="grey"
-          size={10}
-          name="info-with-circle"
-          type="entypo"
-        />
-        <AppText color="grey">Help</AppText>
-      </AppView>
+      <Help />
     </AppView>
   );
 };
