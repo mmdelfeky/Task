@@ -3,7 +3,7 @@ import {AppIcon, AppText, AppView} from '../../../common';
 import {getTranslatedValue} from '../../../utils/List';
 
 const Certificates = ({data}) => {
-  const certificates = getTranslatedValue(data, 'certif');
+  const certificates = data ? getTranslatedValue(data, 'certif') : [];
   return (
     <AppView stretch row>
       <AppView stretch center backgroundColor="white" width={20}>
